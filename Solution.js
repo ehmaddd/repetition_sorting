@@ -16,6 +16,7 @@ function sortByFrequency(arr) {
           return b - a;
         }
     });
+    return arr;
   }
 
   const numbers = [4, 2, 2, 8, 4, 6, 4, 8, 2, 4, 4, 6, 10];
