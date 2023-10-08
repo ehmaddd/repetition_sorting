@@ -8,6 +8,11 @@ function sortByFrequency(arr) {
         const freqA = frequencyMap[a];
         const freqB = frequencyMap[b];
       });
+
+      // Sort by frequency in ascending order
+      if (freqA !== freqB) {
+        return freqA - freqB;
+      }
   }
 
   const numbers = [4, 2, 2, 8, 4, 6, 4, 8, 2, 4, 4, 6, 10];
