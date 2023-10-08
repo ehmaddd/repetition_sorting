@@ -3,6 +3,11 @@ function sortByFrequency(arr) {
     arr.forEach((num) => {
       frequencyMap[num] = (frequencyMap[num] || 0) + 1;
     });
+
+    arr.sort((a, b) => {
+        const freqA = frequencyMap[a];
+        const freqB = frequencyMap[b];
+      });
   }
 
   const numbers = [4, 2, 2, 8, 4, 6, 4, 8, 2, 4, 4, 6, 10];
