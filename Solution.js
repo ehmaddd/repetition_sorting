@@ -12,6 +12,9 @@ function sortByFrequency(arr) {
       // Sort by frequency in ascending order
       if (freqA !== freqB) {
         return freqA - freqB;
+      } else {
+        // If frequencies are the same, sort in descending order
+        return b - a;
       }
   }
 
